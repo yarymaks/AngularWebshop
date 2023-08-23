@@ -79,8 +79,8 @@ app.post('/checkout', async (req, res, next) => {
         quantity: item.quantity,
       })),
       mode: 'payment',
-      success_url: 'http://localhost:4242/success.html',
-      cancel_url: 'http://localhost:4242/cancel.html',
+      success_url: 'https://backangularwebshop.onrender.com/success.html',
+      cancel_url: 'https://backangularwebshop.onrender.com/cancel.html',
     });
 
     res.status(200).json(session);
@@ -89,6 +89,6 @@ app.post('/checkout', async (req, res, next) => {
   }
 });
 
-app.listen(4242, () => {
-  console.log('app is running on 4242');
+app.listen('https://backangularwebshop.onrender.com', () => {
+  console.log('app is running on https://backangularwebshop.onrender.com');
 });
