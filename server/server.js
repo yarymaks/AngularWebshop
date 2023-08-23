@@ -89,6 +89,6 @@ app.post('/checkout', async (req, res, next) => {
   }
 });
 
-app.listen('https://backangularwebshop.onrender.com', () => {
+app.listen(4242, () => {
   console.log('app is running on https://backangularwebshop.onrender.com');
 });
